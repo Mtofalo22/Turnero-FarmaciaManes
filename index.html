@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://web.manes.com.ar/images/favcon.ico" />
+    <title>Turnos</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/a2d7a9e5aa.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <a href="https://wa.me/+5492216818055" class="whatsapp-float" target="_blank">
+        <img decoding="async" src="https://web.manes.com.ar/images/logo-wasap.png">
+    </a>
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <ul class="header-left-ul">
+                    <li>
+                        <a href="https://www.facebook.com/Fcia.Manes/" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/farmaciamanes/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-img">
+                <img src="https://web.manes.com.ar/images/border-top-bar2.png" alt="Decoración" class="img">
+            </div>
+            <div class="header-right">
+                <ul class="header-right-ul">
+                    <li>
+                        <a>
+                            <span class="fa fa-map-marker"></span>
+                            <p>49 N° 636, La Plata Buenos Aires</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="institucional@manes.com.ar">
+                            <span class="fa fa-envelope-o"></span>
+                            <p>institucional@manes.com.ar</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="fa fa-phone"></span>
+                            <p>(+54) 221 425 0100</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <div>
+        <div class="logo-tittle-container">
+            <div class="logo">
+                <a href="https://web.manes.com.ar"><img src="https://web.manes.com.ar/images/logo.png" alt=""></a>
+            </div>
+            <h1>Por favor, seleccione su turno</h1>
+        </div>
+        <main class="form-container">
+
+            <form id="formTurno">
+                <label for="nombre">Nombres:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="turno">Seleccione un Turno:</label>
+                <select id="turno" name="turno" required>
+                    <option value="">Seleccione...</option>
+                    <option value="mañana">Mañana</option>
+                    <option value="tarde">Tarde</option>
+                </select>
+
+                <input type="hidden" id="idEvento" name="idEvento" value="12345">
+
+                <button type="submit" id="btnConfirmar">Confirmar</button>
+                <button type="button" id="btnCancelar">Cancelar</button>
+            </form>
+        </main>
+    </div>
+
+    <footer class="footer">
+    </footer>
+
+</body>
+
+</html>
