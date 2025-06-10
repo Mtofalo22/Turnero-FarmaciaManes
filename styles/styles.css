@@ -179,12 +179,127 @@ footer {
   padding: 10vh;
 }
 
+/* footer */
+
+.footer {
+  background-color: #030a31;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px 0 20px;
+}
+
+.footer .uk-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer .uk-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer .box {
+  flex: 1;
+  min-width: 200px;
+  max-width: 280px;
+  margin-bottom: 20px;
+}
+
+.footer .box-title h3 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.footer .box-title h3::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #007bff;
+  margin-top: 5px;
+}
+
+.footer .box-content p,
+.footer .box-content li,
+.footer .box-content a {
+  color: #ddd;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer .box-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .box-content li {
+  margin-bottom: 10px;
+}
+
+.footer .box-content a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer .box-content a:hover {
+  color: #00c8ff;
+}
+
+.footer .box-content .fa {
+  margin-right: 8px;
+  color: #00c8ff;
+}
+
+.footer img {
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.copyright {
+  border-top: 1px solid #1a1f4a;
+  padding-top: 15px;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.copyright a {
+  color: #aaa;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  color: #00c8ff;
+}
+
+.uk-float-left {
+  float: left;
+}
+
+.uk-float-right {
+  float: right;
+}
+
 @media (max-width: 1024px) {
   .header-left {
     padding-left: 50px;
     background-color: #80cc28;
     padding-bottom: 40px;
     align-items: center;
+  }
+
+  .footer .uk-grid {
+    justify-content: center;
+    gap: 20px;
   }
 }
 
@@ -238,6 +353,14 @@ footer {
   .img {
     visibility: hidden;
   }
+
+  .box.box-links {
+    display: none;
+  }
+  .footer .uk-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 425px) {
@@ -266,5 +389,14 @@ footer {
   button {
     font-size: 14px;
     padding: 8px;
+  }
+  .box.box-links,
+  .box.box-servicios {
+    display: none;
+  }
+  .footer .uk-grid {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
